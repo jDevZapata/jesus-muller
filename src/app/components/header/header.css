@@ -1,0 +1,30 @@
+.header {
+    background-color: #272727;
+    color: #fff;
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    font-weight: 700;
+    width: 100%;
+    position: fixed;
+}
+
+.test {
+    padding: 2rem;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.logo {
+    margin-right: 1rem;
+    color: #272727;
+    background-color: #fff;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
