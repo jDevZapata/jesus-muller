@@ -9,11 +9,7 @@
     position: fixed;
 }
 
-.test {
-    padding: 2rem;
-}
-
-.link {
+.header a {
     text-decoration: none;
 }
 

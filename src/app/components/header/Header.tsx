@@ -4,7 +4,7 @@ import './header.css';
 const Navbar = () => {
     return (
         <header className="header">
-            <Link href='/' className='link'>
+            <Link href='/'>
                 <span className='logo'>JM</span>
             </Link>
             <div>Jesús Müller</div>
