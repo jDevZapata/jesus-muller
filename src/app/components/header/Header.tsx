@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import './header.css';
+import styles from './Header.module.css';
 
 const Navbar = () => {
     return (
-        <header className="header">
+        <header className={styles.header}>
             <Link href='/'>
-                <span className='logo'>JM</span>
+                <span className={styles.logo}>JM</span>
             </Link>
             <div>Jesús Müller</div>
         </header>
