@@ -1,0 +1,22 @@
+.companyContainer {
+    padding: 6rem 2rem;
+}
+
+.companyContainer p, .linksSection, .technologiesSection {
+    margin-bottom: 1rem;
+}
+
+.companyTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.companyTitle .workedTime {
+    font-style: italic;
+}
+
+.linksSection a {
+    margin-left: 12px;
+    font-weight: 700;
+}
