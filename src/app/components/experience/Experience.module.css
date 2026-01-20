@@ -1,0 +1,35 @@
+section.experience {
+    margin-top: 2rem;
+    background-color: #38586e;
+    color: #fff;
+}
+
+.experienceContainer {
+    padding: 2rem;
+}
+
+.companiesContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.companiesContainer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.company {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.company .companyImage {
+    border-radius: 10%;
+}
+
+.company .seeMoore {
+    margin-top: 1rem;
+    font-weight: 700;
+}
