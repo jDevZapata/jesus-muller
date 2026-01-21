@@ -1,11 +1,13 @@
 import Presentation from "@/app/components/presentation/Presentation";
 import Experience from "@/app/components/experience/Experience";
+import Education from "@/app/components/education/Education";
 
 export default function Home() {
   return (
     <main>
       <Presentation />
       <Experience />
+      <Education />
     </main>
   );
 }
