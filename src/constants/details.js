@@ -246,7 +246,7 @@ const details = [
     projects: [
       "OSDE"
     ],
-    workedTime: { from: "2024"},
+    workedTime: { from: "2024", to: "2026" },
   }
 ];
 

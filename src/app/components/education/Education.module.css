@@ -1,0 +1,22 @@
+.education {
+    padding: 2rem;
+    background-color: #333333;
+    color: #fff;
+}
+
+.educationDescription  p {
+    margin-top: 1rem;
+}
+
+.educationDescription {
+    margin-bottom: 1rem;
+}
+
+.certifications {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.certifications a {
+    margin-left: 10px;
+}

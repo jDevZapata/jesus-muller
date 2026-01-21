@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Profile from '@/assets/profile.png'
 import styles from './Presentation.module.css';
-import { presentationContent } from '@/content/presentation';
+import { presentationContent } from '@/constants/texts';
 
 const Presentation = () => {
     return (
