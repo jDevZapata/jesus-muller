@@ -1,8 +1,13 @@
+import Thomson from '@/assets/companies/thomson.png';
+import Softtek from '@/assets/companies/softtek.png';
+import Globant from '@/assets/companies/globant.png';
+import Baufest from '@/assets/companies/baufest.png';
+
 const details = [
   {
     id: 2013,
     name: "Thomson Reuters",
-    img: "thomson",
+    img: Thomson,
     description:
       "Thomson Reuters / La Ley Argentina es una empresa dedicada principalmente a la venta de libros para abogados y productos digitales que facilitan la búsqueda dentro de una extensa base de datos de jurisprudencia, así como el enriquecimiento de los textos encontrados.",
     myExperience: [
@@ -56,7 +61,7 @@ const details = [
   {
     id: 2016,
     name: "Softtek",
-    img: "softtek",
+    img: Softtek,
     description:
       "Softtek es una empresa líder en servicios de tecnología y soluciones de negocio, comprometida con la transformación digital de las organizaciones. Desde su fundación en 1982 en México, ha sido pionera en ofrecer servicios de vanguardia que impulsan la eficiencia operativa y la innovación en diversas industrias.",
     myExperience: [
@@ -101,7 +106,7 @@ const details = [
   {
     id: 2018,
     name: "Globant",
-    img: "globant",
+    img: Globant,
     description:
       "Globant es una empresa multinacional de tecnología y servicios de consultoría con sede en Argentina. Fundada en 2003, Globant se ha destacado como líder en la industria de la transformación digital, ofreciendo servicios de vanguardia en áreas como desarrollo de software, experiencia del usuario, inteligencia artificial, realidad aumentada y más.",
     myExperience: [
@@ -148,7 +153,7 @@ const details = [
   {
     id: 2019,
     name: "Baufest",
-    img: "baufest",
+    img: Baufest,
     description:
       "Baufest es una empresa de servicios de tecnología con una amplia trayectoria en el mercado. Fundada en Argentina en 1991, Baufest se ha expandido a nivel global, estableciendo operaciones en varios países de América Latina, Estados Unidos y Europa. La empresa se especializa en ofrecer soluciones tecnológicas innovadoras y personalizadas para satisfacer las necesidades de sus clientes en áreas como desarrollo de software, consultoría tecnológica, inteligencia artificial, transformación digital y más.",
     myExperience: [
@@ -209,7 +214,7 @@ const details = [
   },{
     id: 2024,
     name: "Softtek",
-    img: "softtek",
+    img: Softtek,
     description:
       "Softtek es una empresa líder en servicios de tecnología y soluciones de negocio, comprometida con la transformación digital de las organizaciones. Desde su fundación en 1982 en México, ha sido pionera en ofrecer servicios de vanguardia que impulsan la eficiencia operativa y la innovación en diversas industrias.",
     myExperience: [

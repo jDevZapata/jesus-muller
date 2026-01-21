@@ -1,7 +1,7 @@
 import styles from './Experience.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import { companies, companyImages } from '@/constants/companies';
+import { companies } from '@/constants/companies';
 import { experienceContent } from '@/constants/texts';
 
 const Experience = () => {
@@ -14,7 +14,7 @@ const Experience = () => {
                 <div className={styles.companiesContainer}>
                     {companies.map((company) => (
                         <Link href={`/company/${company.id}`} key={company.id} className={styles.company}>
-                            <Image src={companyImages[company.name as keyof typeof companyImages]} className={styles.companyImage} alt={company.name} width={120} height={120} />
+                            <Image src={company.img} className={styles.companyImage} alt={company.name} width={120} height={120} />
                             <span className={styles.seeMoore}>{experienceContent.company.seeMoore}</span>
                         </Link>
                     ))}
