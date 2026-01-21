@@ -12,31 +12,28 @@ const companies = [
     },
     {
         id: 2016,
+        img: Softtek,
         name: "softtek",
         alt: "Softtek",
     },
     {
         id: 2018,
+        img: Globant,
         name: "globant",
         alt: "Globant"
     },
     {
         id: 2019,
+        img: Baufest,
         name: "baufest",
         alt: "Buafest"
     },
     {
         id: 2024,
+        img: Softtek,
         name: "softtek",
         alt: "Softtek"
     }
 ];
 
-const companyImages = {
-    thomson: Thomson,
-    softtek: Softtek,
-    globant: Globant,
-    baufest: Baufest,
-};
-
-export { companies, companyImages }
+export { companies }

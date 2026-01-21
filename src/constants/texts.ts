@@ -28,3 +28,8 @@ export const educationContent = {
         { id: '9536122', name: 'Git - Integración continua', url: 'https://www.udemy.com/certificate/UC-104025bc-a6f0-4106-b041-d71dad522fe6/' }
     ]
 }
+
+export const technologiesContent = {
+    title: 'Tecnologías',
+    description: 'Durante los últimos 12 años, he adquirido experiencia trabajando con una amplia variedad de bibliotecas, frameworks y metodologías. En esta sección, me gustaría destacar aquellas con las que he dedicado más tiempo y he profundizado mi conocimiento.'
+}

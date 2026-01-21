@@ -1,6 +1,5 @@
 import styles from './page.module.css';
 import details from '@/constants/details';
-import { companyImages } from '@/constants/companies';
 import { experienceContent } from '@/constants/texts';
 import Image from 'next/image';
 
@@ -21,7 +20,7 @@ const CompanyDetail = async ({ params }: { params: Promise<{ id: string }> }) =>
                         <b>({company.workedTime.from} - {company.workedTime.to})</b>
                     </span>
                 </div>
-                <Image src={companyImages[company.img as keyof typeof companyImages]} width={120} height={120} alt={company.name} />
+                <Image src={company.img} width={120} height={120} alt={company.name} />
             </div>
             <p>{company.description}</p>
             {company.myExperience.map((exp, index) => (
