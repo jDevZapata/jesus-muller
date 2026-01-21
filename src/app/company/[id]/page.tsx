@@ -1,6 +1,7 @@
 import styles from './page.module.css';
 import details from '@/constants/details';
 import { companyImages } from '@/constants/companies';
+import { experienceContent } from '@/constants/texts';
 import Image from 'next/image';
 
 const CompanyDetail = async ({ params }: { params: Promise<{ id: string }> }) => {
@@ -8,7 +9,7 @@ const CompanyDetail = async ({ params }: { params: Promise<{ id: string }> }) =>
     const company = details.find(c => c.id === parseInt(id));
 
     if (!company) {
-        return <div>Company not found</div>;
+        return null;
     }
 
     return (
@@ -16,7 +17,9 @@ const CompanyDetail = async ({ params }: { params: Promise<{ id: string }> }) =>
             <div className={styles.companyTitle}>
                 <div>
                     <h2>{company.name}</h2>
-                    <span className={styles.workedTime}>({company.workedTime.from} - {company.workedTime.to || 'Present'})</span>
+                    <span className={styles.workedTime}>
+                        <b>({company.workedTime.from} - {company.workedTime.to})</b>
+                    </span>
                 </div>
                 <Image src={companyImages[company.img as keyof typeof companyImages]} width={120} height={120} alt={company.name} />
             </div>
@@ -25,7 +28,7 @@ const CompanyDetail = async ({ params }: { params: Promise<{ id: string }> }) =>
                 <p key={index}>{exp}</p>
             ))}
             <div className={styles.linksSection}>
-                Links Utiles:
+                {experienceContent.company.links}
                 {company.experienceLinks.map((link) => (
                     <a key={link.id} href={link.link} target="_blank" rel="noopener noreferrer">
                         {link.label}
@@ -33,11 +36,11 @@ const CompanyDetail = async ({ params }: { params: Promise<{ id: string }> }) =>
                 ))}
             </div>
             <div className={styles.technologiesSection}>
-                Tecnologías: <b>{company.technologies.join(', ')}.</b>
+                {experienceContent.company.technologies}: <b>{company.technologies.join(', ')}.</b>
             </div>
             {company.projects && (
                 <div className={styles.projectsSection}>
-                    Proyectos: <b>{company.projects.join(', ')}.</b>
+                    {experienceContent.company.projects}: <b>{company.projects.join(', ')}.</b>
                 </div>
             )}
         </div>

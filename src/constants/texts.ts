@@ -4,3 +4,13 @@ export const presentationContent = {
     description: 'Decicidí crear este sitio web para todas las personas que deseen conocer más detalles sobre mi experiencia profesional ya que soy un apasionado por crear experiencias de usuario excepcionales y resolver problemas complejos a través del código. Siempre en busca de aprender nuevas tecnologías y mejorar mis habilidades.',
     phrase: '"El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito." - Albert Schweitzer'
 }
+
+export const experienceContent = {
+    title: 'Experiencia Laboral',
+    company : {
+        seeMoore: 'Ver más',
+        links: 'Links Utiles',
+        technologies: 'Tecnologías',
+        projects: 'Proyectos'
+    }
+}
