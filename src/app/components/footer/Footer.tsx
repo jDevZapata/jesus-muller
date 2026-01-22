@@ -1,4 +1,5 @@
 import styles from './Footer.module.css';
+import { footerContent } from '@/constants/texts';
 import Linkedin from '@/assets/footer/linkedin.png';
 import Github from '@/assets/icons/techs/github.png';
 import Email from '@/assets/footer/email.png';
@@ -11,19 +12,19 @@ const Footer = () => {
 
     return (
         <footer className={styles.footerContainer}>
-            <h4>Información de contacto</h4>
+            <h4>{footerContent.title}</h4>
             <div className={styles.contactContainer}>
                 <span className={styles.info}>
                     <Image src={Email} alt="github" width={20} height={20} />
-                    jhzapata.dev@gmail.com
+                    {footerContent.email}
                 </span>
                 <span className={styles.info}>
                     <Image src={Phone} alt="phone" width={20} height={20} />
-                    +54 9 11 2304 6911
+                    {footerContent.phone}
                 </span>
                 <span className={styles.info}>
                     <Image src={Address} alt="address" width={20} height={20} />
-                    Villa Santa Rita, CABA, Argentina
+                    {footerContent.address}
                 </span>
             </div>
             <div className={styles.footerBottom}>
@@ -52,7 +53,7 @@ const Footer = () => {
                     />
                 </a>
             </div>
-            <div>&copy; {currentYear} Jesús Müller - Frontend Developer</div>
+            <div>&copy; {currentYear} {footerContent.mark}</div>
         </footer>
     );
 };
