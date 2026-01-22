@@ -1,0 +1,25 @@
+.footerContainer {
+    background-color: #d3d3d3;
+    padding: 2rem;
+}
+
+.footerContainer h4 {
+    margin-bottom: 1rem;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.contactContainer .info {
+    display: flex;
+    align-items: center;    
+    padding-bottom: 1rem;
+}
+
+.footerBottom {
+    padding-bottom: 1rem;
+}

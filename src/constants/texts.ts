@@ -33,3 +33,11 @@ export const technologiesContent = {
     title: 'Tecnologías',
     description: 'Durante los últimos 12 años, he adquirido experiencia trabajando con una amplia variedad de bibliotecas, frameworks y metodologías. En esta sección, me gustaría destacar aquellas con las que he dedicado más tiempo y he profundizado mi conocimiento.'
 }
+
+export const footerContent = {
+    title: 'Información de contacto',
+    email: 'jhzapata.dev@gmail.com',
+    phone: '+54 9 11 2304 6911',
+    address: 'Villa Santa Rita, CABA, Argentina',
+    mark: 'Jesús Müller - Frontend Developer',
+}
