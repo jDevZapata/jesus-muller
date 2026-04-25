@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ThemeToggle from '../theme-toggle/ThemeToggle';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -10,6 +11,7 @@ const Header = () => {
                 </Link>
                 <span className={styles.headerName}>Jesús Müller</span>
             </div>
+            <ThemeToggle />
         </header>
     );
 };
