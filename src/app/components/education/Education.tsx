@@ -23,7 +23,7 @@ const Education = () => {
                                     key={`udemy-${index}`} 
                                     href={cert.url} 
                                     target="_blank" 
-                                    style={{ marginRight: '5px' }}
+                                    style={{ marginRight: '5px', marginBottom: '10px' }}
                                     rel="noopener noreferrer"
                                 >
                                     {cert.name}

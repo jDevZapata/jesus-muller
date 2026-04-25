@@ -1,49 +1,53 @@
 .education {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   background: var(--surface);
   color: var(--text);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .educationInner {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
 .title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .title h2 {
   color: var(--text);
   position: relative;
   display: inline-block;
+  letter-spacing: -0.02em;
 }
 
 .title h2::after {
   content: '';
   position: absolute;
-  bottom: -0.5rem;
+  bottom: -0.75rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 50px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-light), var(--accent));
   border-radius: 2px;
 }
 
 .educationDescription {
-  background: var(--surface-alt);
-  padding: 2rem;
+  background: var(--background);
+  padding: 2.5rem;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .educationDescription p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   color: var(--text-muted);
-  line-height: 1.8;
+  line-height: 1.9;
+  font-size: 1.05rem;
 }
 
 .educationDescription p:last-child {
@@ -56,65 +60,74 @@
 }
 
 .certifications {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .certifications h3 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  color: var(--text);
 }
 
 .certificationsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
 }
 
 .certificationCard {
-  background: var(--surface-alt);
-  padding: 1.5rem;
+  background: var(--background);
+  padding: 2rem;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   transition: var(--transition);
 }
 
 .certificationCard:hover {
-  border-color: var(--primary);
-  box-shadow: var(--shadow);
-  transform: translateY(-2px);
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
 }
 
 .certificationCard strong {
   display: block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   color: var(--text);
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.certificationCard span {
+  color: var(--text-muted);
+  font-size: 1rem;
 }
 
 .certificationCard a {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  background: var(--primary);
-  color: var(--surface);
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary-light), var(--primary));
+  color: var(--text);
   border-radius: var(--radius-sm);
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-weight: 600;
+  font-size: 0.95rem;
   transition: var(--transition);
+  box-shadow: 0 4px 15px -5px rgba(20, 184, 166, 0.4);
 }
 
 .certificationCard a:hover {
-  background: var(--primary-dark);
-  color: var(--surface);
+  background: linear-gradient(135deg, var(--accent), var(--primary-light));
+  box-shadow: 0 6px 20px -5px rgba(6, 182, 212, 0.5);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 640px) {
   .education {
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
   }
 
   .educationDescription {
-    padding: 1.5rem;
+    padding: 1.75rem;
   }
 
   .certificationsGrid {

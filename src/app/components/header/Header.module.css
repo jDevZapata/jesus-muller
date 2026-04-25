@@ -1,47 +1,46 @@
 .header {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(12, 10, 9, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   color: var(--text);
   display: flex;
-  padding: 1rem 2rem;
+  padding: 1.25rem 2rem;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 0.05);
 }
 
 .headerContent {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }
 
 .logo {
-  color: var(--surface);
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  height: 2.75rem;
-  width: 2.75rem;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--primary-light), var(--primary));
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1rem;
-  box-shadow: var(--shadow);
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-glow);
   transition: var(--transition);
 }
 
 .logo:hover {
-  transform: scale(1.05);
-  box-shadow: var(--shadow-lg);
+  transform: scale(1.08);
+  box-shadow: 0 0 60px -15px rgba(20, 184, 166, 0.5);
 }
 
 .header a {
@@ -50,16 +49,17 @@
 
 .headerName {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: var(--text);
+  letter-spacing: -0.01em;
 }
 
 @media (max-width: 640px) {
   .header {
-    padding: 0.75rem 1rem;
+    padding: 1rem;
   }
   
   .headerName {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 }

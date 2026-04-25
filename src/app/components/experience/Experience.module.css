@@ -1,109 +1,139 @@
 .experience {
-  margin-top: 4rem;
-  background: linear-gradient(135deg, #1e3a5f 0%, #2d5a7f 100%);
-  color: var(--surface);
-  padding: 4rem 2rem;
+  background: linear-gradient(180deg, var(--background-alt) 0%, var(--background) 100%);
+  color: var(--text);
+  padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
 }
 
 .experienceContainer {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .sectionTitle {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .sectionTitle h2 {
-  color: var(--surface);
-  font-size: 2.25rem;
+  color: var(--text);
+  font-size: 2.5rem;
   position: relative;
   display: inline-block;
+  letter-spacing: -0.02em;
 }
 
 .sectionTitle h2::after {
   content: '';
   position: absolute;
-  bottom: -0.5rem;
+  bottom: -0.75rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent), var(--primary));
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-light), var(--accent));
   border-radius: 2px;
 }
 
 .companiesContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
   justify-items: center;
 }
 
 .companiesContainer a {
   text-decoration: none;
-  color: var(--surface);
+  color: var(--text);
 }
 
 .company {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  background: var(--surface);
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
   transition: var(--transition);
   width: 100%;
-  max-width: 200px;
+  max-width: 220px;
 }
 
 .company:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px -8px rgb(0 0 0 / 0.3);
+  background: var(--surface-elevated);
+  border-color: var(--primary-light);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
 }
 
 .company .companyImage {
   border-radius: var(--radius-sm);
-  filter: brightness(1.1);
+  filter: grayscale(20%) brightness(1.1);
   transition: var(--transition);
 }
 
 .company:hover .companyImage {
-  filter: brightness(1.2);
-  transform: scale(1.05);
+  filter: grayscale(0%) brightness(1.2);
+  transform: scale(1.08);
 }
 
 .company .seeMoore {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   font-weight: 600;
   font-size: 0.95rem;
-  opacity: 0.9;
+  color: var(--text-muted);
   transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .company:hover .seeMoore {
+  color: var(--primary-light);
+}
+
+.company .seeMoore::after {
+  content: '→';
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: var(--transition);
+}
+
+.company:hover .seeMoore::after {
   opacity: 1;
-  color: var(--accent);
+  transform: translateX(0);
 }
 
 @media (max-width: 640px) {
   .experience {
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
   }
 
   .sectionTitle h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .companiesContainer {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
   }
 
   .company {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }

@@ -249,7 +249,7 @@ const details = [
       "Jira",
     ],
     projects: [
-      "OSDE"
+      "Premo V2"
     ],
     workedTime: { from: "2024", to: "2026" },
   }
