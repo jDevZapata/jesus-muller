@@ -1,15 +1,17 @@
 import Link from 'next/link';
 import styles from './Header.module.css';
 
-const Navbar = () => {
+const Header = () => {
     return (
         <header className={styles.header}>
-            <Link href='/'>
-                <span className={styles.logo}>JM</span>
-            </Link>
-            <div>Jesús Müller</div>
+            <div className={styles.headerContent}>
+                <Link href='/'>
+                    <span className={styles.logo}>JM</span>
+                </Link>
+                <span className={styles.headerName}>Jesús Müller</span>
+            </div>
         </header>
-    )
+    );
 };
 
-export default Navbar;
+export default Header;

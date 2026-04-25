@@ -1,22 +1,123 @@
 .education {
-    padding: 2rem;
-    background-color: #333333;
-    color: #fff;
+  padding: 4rem 2rem;
+  background: var(--surface);
+  color: var(--text);
 }
 
-.educationDescription  p {
-    margin-top: 1rem;
+.educationInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title h2 {
+  color: var(--text);
+  position: relative;
+  display: inline-block;
+}
+
+.title h2::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: 2px;
 }
 
 .educationDescription {
-    margin-bottom: 1rem;
+  background: var(--surface-alt);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+
+.educationDescription p {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.educationDescription p:last-child {
+  margin-bottom: 0;
+}
+
+.educationDescription p:first-child {
+  font-weight: 500;
+  color: var(--text);
 }
 
 .certifications {
-    margin-top: 1rem;
-    font-weight: 700;
+  margin-top: 2rem;
 }
 
-.certifications a {
-    margin-left: 10px;
+.certifications h3 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.certificationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.certificationCard {
+  background: var(--surface-alt);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.certificationCard:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.certificationCard strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.certificationCard a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: var(--surface);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.certificationCard a:hover {
+  background: var(--primary-dark);
+  color: var(--surface);
+}
+
+@media (max-width: 640px) {
+  .education {
+    padding: 3rem 1rem;
+  }
+
+  .educationDescription {
+    padding: 1.5rem;
+  }
+
+  .certificationsGrid {
+    grid-template-columns: 1fr;
+  }
 }

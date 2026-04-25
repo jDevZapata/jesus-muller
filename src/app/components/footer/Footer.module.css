@@ -1,25 +1,107 @@
 .footerContainer {
-    background-color: #d3d3d3;
-    padding: 2rem;
+  background: var(--text);
+  color: var(--surface);
+  padding: 3rem 2rem 2rem;
+}
+
+.footerInner {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .footerContainer h4 {
-    margin-bottom: 1rem;
+  color: var(--surface);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .contactContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .contactContainer .info {
-    display: flex;
-    align-items: center;    
-    padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--surface);
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.contactContainer .info:hover {
+  color: var(--accent);
+}
+
+.contactContainer .info img {
+  filter: brightness(0.9);
+  transition: var(--transition);
+}
+
+.contactContainer .info:hover img {
+  filter: brightness(1.2);
 }
 
 .footerBottom {
-    padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerBottom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.footerBottom a:hover {
+  background: var(--primary);
+  transform: translateY(-3px);
+}
+
+.footerBottom img {
+  filter: brightness(0.95);
+  transition: var(--transition);
+}
+
+.footerBottom a:hover img {
+  filter: brightness(1.1);
+}
+
+.footerContainer > div:last-of-type {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .footerContainer {
+    padding: 2rem 1rem;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contactContainer .info {
+    justify-content: center;
+  }
+
+  .footerBottom {
+    gap: 1rem;
+  }
 }
