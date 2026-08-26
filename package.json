@@ -20,5 +20,8 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
     "typescript": "^5"
+  },
+  "allowScripts": {
+    "unrs-resolver@1.11.1": true
   }
 }
