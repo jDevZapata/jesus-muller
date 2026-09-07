@@ -8,7 +8,6 @@ import { Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
-    const whatsappLink = `https://wa.me/${footerContent.phone.replace(/\D/g, '')}`;
 
     return (
         <footer className={styles.footerContainer} id="contact">
@@ -52,7 +51,7 @@ const Footer = () => {
                         />
                     </a>
                     <a
-                        href={whatsappLink}
+                        href="https://wa.me/5491123046911"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="WhatsApp"
