@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Jesús Müller | Frontend Senior",
@@ -40,7 +47,7 @@ export default function RootLayout({
 
   return (
     <html lang="es" suppressHydrationWarning>
-      <body>
+      <body className={manrope.variable}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <Header />
         {children}
