@@ -25,23 +25,27 @@
 }
 
 .logo {
-  color: var(--text);
-  background: linear-gradient(135deg, var(--primary-light), var(--primary));
   height: 3rem;
   width: 3rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 1.1rem;
-  box-shadow: var(--shadow-glow);
+  display: block;
+  object-fit: contain;
   transition: var(--transition);
 }
 
 .logo:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 60px -15px rgba(96, 165, 250, 0.5);
+}
+
+.logoLight {
+  display: none;
+}
+
+[data-theme="light"] .logoDark {
+  display: none;
+}
+
+[data-theme="light"] .logoLight {
+  display: block;
 }
 
 .header a {
@@ -60,6 +64,11 @@
   align-items: center;
   gap: 1.5rem;
   margin-left: auto;
+}
+
+.themeControl {
+  flex-shrink: 0;
+  margin-left: 2rem;
 }
 
 .navigation a {
@@ -88,6 +97,10 @@
   
   .headerName {
     font-size: 1.05rem;
+  }
+
+  .themeControl {
+    margin-left: 1rem;
   }
 
   .navigation {

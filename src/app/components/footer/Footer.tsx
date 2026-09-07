@@ -2,11 +2,13 @@ import styles from './Footer.module.css';
 import { footerContent } from '@/constants/texts';
 import Linkedin from '@/assets/footer/linkedin.png';
 import Github from '@/assets/icons/techs/github.png';
+import Whatsapp from '@/assets/footer/whatsapp.png';
 import Image from 'next/image';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
+    const whatsappLink = `https://wa.me/${footerContent.phone.replace(/\D/g, '')}`;
 
     return (
         <footer className={styles.footerContainer} id="contact">
@@ -16,10 +18,6 @@ const Footer = () => {
                     <a className={styles.info} href={`mailto:${footerContent.email}`}>
                         <Mail size={20} strokeWidth={1.8} aria-hidden="true" />
                         {footerContent.email}
-                    </a>
-                    <a className={styles.info} href={`tel:${footerContent.phone.replaceAll(' ', '')}`}>
-                        <Phone size={20} strokeWidth={1.8} aria-hidden="true" />
-                        {footerContent.phone}
                     </a>
                     <span className={styles.info}>
                         <MapPin size={20} strokeWidth={1.8} aria-hidden="true" />
@@ -36,8 +34,8 @@ const Footer = () => {
                         <Image
                             src={Linkedin}
                             alt="linkedin"
-                            width={24}
-                            height={24}
+                            width={40}
+                            height={40}
                         />
                     </a>
                     <a
@@ -49,8 +47,21 @@ const Footer = () => {
                         <Image
                             src={Github}
                             alt="github"
-                            width={24}
-                            height={24}
+                            width={40}
+                            height={40}
+                        />
+                    </a>
+                    <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="WhatsApp"
+                    >
+                        <Image
+                            src={Whatsapp}
+                            alt="WhatsApp"
+                            width={40}
+                            height={40}
                         />
                     </a>
                 </div>
