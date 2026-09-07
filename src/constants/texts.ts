@@ -9,7 +9,7 @@ export const experienceContent = {
     title: 'Experiencia Laboral',
     company: {
         seeMoore: 'Ver más',
-        links: 'Links Utiles',
+        links: 'Enlaces útiles',
         technologies: 'Tecnologías',
         projects: 'Proyectos'
     }

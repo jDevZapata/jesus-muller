@@ -4,10 +4,30 @@ import { experienceContent } from '@/constants/texts';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import type { CompanyExperience } from '@/types/portfolio';
+import type { Metadata } from 'next';
+
+const experiences = details as CompanyExperience[];
+
+const getCompany = (id: string) => experiences.find((company) => company.id === parseInt(id, 10));
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+    const { id } = await params;
+    const company = getCompany(id);
+
+    if (!company) {
+        return { title: 'Experiencia no encontrada | Jesús Müller' };
+    }
+
+    return {
+        title: `${company.name} | Experiencia de Jesús Müller`,
+        description: `Experiencia de Jesús Müller como Frontend Developer en ${company.name}, con proyectos, contribuciones y tecnologías utilizadas.`,
+    };
+}
 
 const CompanyDetail = async ({ params }: { params: Promise<{ id: string }> }) => {
     const { id } = await params;
-    const company = details.find(c => c.id === parseInt(id));
+    const company = getCompany(id);
 
     if (!company) {
         notFound();

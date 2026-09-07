@@ -1,0 +1,46 @@
+import type { StaticImageData } from 'next/image';
+import html5 from '@/assets/icons/techs/html5.png';
+import javascript from '@/assets/icons/techs/javascript.png';
+import css from '@/assets/icons/techs/css.png';
+import react from '@/assets/icons/techs/react.png';
+import typescript from '@/assets/icons/techs/typescript.png';
+import redux from '@/assets/icons/techs/redux.png';
+import git from '@/assets/icons/techs/git.png';
+import api from '@/assets/icons/techs/api.png';
+import json from '@/assets/icons/techs/json.png';
+import unitTesting from '@/assets/icons/techs/unit-testing.png';
+import github from '@/assets/icons/techs/github.png';
+import materialUi from '@/assets/icons/techs/material-ui.png';
+import cloud from '@/assets/icons/techs/cloud.png';
+import jenkins from '@/assets/icons/techs/jenkins.png';
+import scrum from '@/assets/icons/techs/scrum.png';
+import jira from '@/assets/icons/techs/jira.png';
+import vsc from '@/assets/icons/techs/vsc.png';
+
+export type Technology = {
+  id: number;
+  name: string;
+  icon: StaticImageData;
+};
+
+const technologies: Technology[] = [
+  { id: 101, name: 'HTML5', icon: html5 },
+  { id: 102, name: 'JavaScript', icon: javascript },
+  { id: 103, name: 'CSS3', icon: css },
+  { id: 104, name: 'React', icon: react },
+  { id: 105, name: 'TypeScript', icon: typescript },
+  { id: 106, name: 'Redux', icon: redux },
+  { id: 107, name: 'Git', icon: git },
+  { id: 108, name: 'REST API', icon: api },
+  { id: 109, name: 'JSON', icon: json },
+  { id: 110, name: 'Unit Testing', icon: unitTesting },
+  { id: 111, name: 'GitHub', icon: github },
+  { id: 112, name: 'Material UI', icon: materialUi },
+  { id: 113, name: 'Cloud', icon: cloud },
+  { id: 114, name: 'Jenkins', icon: jenkins },
+  { id: 115, name: 'Scrum', icon: scrum },
+  { id: 116, name: 'Jira', icon: jira },
+  { id: 117, name: 'VS Code', icon: vsc },
+];
+
+export default technologies;
