@@ -11,6 +11,10 @@ const experiences = details as CompanyExperience[];
 
 const getCompany = (id: string) => experiences.find((company) => company.id === parseInt(id, 10));
 
+export function generateStaticParams() {
+    return experiences.map((company) => ({ id: String(company.id) }));
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
     const { id } = await params;
     const company = getCompany(id);
