@@ -4,17 +4,26 @@ import { useState, useEffect } from 'react';
 import styles from './ThemeToggle.module.css';
 
 const ThemeToggle = () => {
-    const [isDark, setIsDark] = useState(true);
+    const [isDark, setIsDark] = useState<boolean | null>(null);
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-        const theme = savedTheme ?? (prefersLight ? 'light' : 'dark');
+        const frame = window.requestAnimationFrame(() => {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+            const theme = savedTheme ?? (prefersLight ? 'light' : 'dark');
 
-        document.documentElement.setAttribute('data-theme', theme);
+            document.documentElement.setAttribute('data-theme', theme);
+            setIsDark(theme === 'dark');
+        });
+
+        return () => window.cancelAnimationFrame(frame);
     }, []);
 
     const toggleTheme = () => {
+        if (isDark === null) {
+            return;
+        }
+
         const newTheme = isDark ? 'light' : 'dark';
         setIsDark(!isDark);
         localStorage.setItem('theme', newTheme);
@@ -25,9 +34,9 @@ const ThemeToggle = () => {
         <button 
             className={styles.themeToggle} 
             onClick={toggleTheme}
-            aria-label={isDark ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro'}
+            aria-label={isDark === null || isDark ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro'}
         >
-            {isDark ? (
+            {isDark === null ? null : isDark ? (
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="4"/>
                     <path d="M12 2v2"/>
