@@ -2,10 +2,8 @@ import styles from './Footer.module.css';
 import { footerContent } from '@/constants/texts';
 import Linkedin from '@/assets/footer/linkedin.png';
 import Github from '@/assets/icons/techs/github.png';
-import Email from '@/assets/footer/email.png';
-import Phone from '@/assets/footer/phone.png';
-import Address from '@/assets/footer/address.png';
 import Image from 'next/image';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -16,15 +14,15 @@ const Footer = () => {
                 <h4>{footerContent.title}</h4>
                 <div className={styles.contactContainer}>
                     <a className={styles.info} href={`mailto:${footerContent.email}`}>
-                        <Image src={Email} alt="email" width={20} height={20} />
+                        <Mail size={20} strokeWidth={1.8} aria-hidden="true" />
                         {footerContent.email}
                     </a>
                     <a className={styles.info} href={`tel:${footerContent.phone.replaceAll(' ', '')}`}>
-                        <Image src={Phone} alt="phone" width={20} height={20} />
+                        <Phone size={20} strokeWidth={1.8} aria-hidden="true" />
                         {footerContent.phone}
                     </a>
                     <span className={styles.info}>
-                        <Image src={Address} alt="address" width={20} height={20} />
+                        <MapPin size={20} strokeWidth={1.8} aria-hidden="true" />
                         {footerContent.address}
                     </span>
                 </div>

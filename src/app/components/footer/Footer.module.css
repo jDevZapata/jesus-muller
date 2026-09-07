@@ -47,13 +47,13 @@
   transform: translateY(-2px);
 }
 
-.contactContainer .info img {
-  filter: brightness(0.8);
+.contactContainer .info svg {
+  color: var(--primary-light);
   transition: var(--transition);
 }
 
-.contactContainer .info:hover img {
-  filter: brightness(1.2);
+.contactContainer .info:hover svg {
+  color: var(--accent);
 }
 
 .footerBottom {
