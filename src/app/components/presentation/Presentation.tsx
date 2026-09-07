@@ -18,7 +18,7 @@ const Presentation = () => {
                     </div>
                 </div>
                 <div className={styles.img}>
-                    <Image src={Profile} alt="Jesús Müller, Frontend Senior" className={styles.rounded} height={220} width={230}/>
+                    <Image src={Profile} alt="Jesús Müller, Frontend Senior" className={styles.rounded} height={220} width={220}/>
                 </div>
             </div>
         </section>
