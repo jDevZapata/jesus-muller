@@ -5,8 +5,9 @@ import Image from 'next/image';
 
 const Technologies = () => {
     return (
-        <section className={styles.technologiesSection}>
+        <section className={styles.technologiesSection} id="technology">
             <div className={styles.technologiesInner}>
+                <p className={styles.eyebrow}>Stack actual</p>
                 <h2>{technologiesContent.title}</h2>
                 <div className={styles.description}>
                     {technologiesContent.description}

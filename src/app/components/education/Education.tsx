@@ -23,10 +23,9 @@ const Education = () => {
                                     key={`udemy-${index}`} 
                                     href={cert.url} 
                                     target="_blank" 
-                                    style={{ marginRight: '5px', marginBottom: '10px' }}
                                     rel="noopener noreferrer"
                                 >
-                                    {cert.name}
+                                    {cert.name} <span aria-hidden="true">↗</span>
                                 </a>
                             ))}
                         </div>

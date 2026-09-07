@@ -6,15 +6,19 @@ import { presentationContent } from '@/constants/texts';
 const Presentation = () => {
     return (
         <section className={styles.presentation}>
-            <h1 className={styles.centered}>{presentationContent.title}</h1>
             <div className={styles.presentationContainer}>
                 <div className={styles.description}>
-                    <p>{presentationContent.intro}</p>
+                    <p className={styles.eyebrow}>Frontend Senior · Buenos Aires, Argentina</p>
+                    <h1>Construyo productos digitales claros, robustos y preparados para crecer.</h1>
+                    <p className={styles.lead}>{presentationContent.intro}</p>
                     <p>{presentationContent.description}</p>
-                    <p className={styles.phrase}>{presentationContent.phrase}</p>
+                    <div className={styles.actions}>
+                        <a href="#experience" className={styles.primaryAction}>Ver experiencia</a>
+                        <a href="https://www.linkedin.com/in/jesus-humberto-m%C3%BCller-zapata-38a9a72a6/" target="_blank" rel="noopener noreferrer" className={styles.secondaryAction}>LinkedIn ↗</a>
+                    </div>
                 </div>
                 <div className={styles.img}>
-                    <Image src={Profile} alt="profile" className={styles.rounded} height={170} width={180}/>
+                    <Image src={Profile} alt="Jesús Müller, Frontend Senior" className={styles.rounded} height={220} width={230}/>
                 </div>
             </div>
         </section>

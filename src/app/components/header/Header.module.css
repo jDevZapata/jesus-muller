@@ -1,5 +1,5 @@
 .header {
-  background: var(--surface);
+  background: color-mix(in srgb, var(--background) 88%, transparent);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
@@ -41,7 +41,7 @@
 
 .logo:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 60px -15px rgba(20, 184, 166, 0.5);
+  box-shadow: 0 0 60px -15px rgba(96, 165, 250, 0.5);
 }
 
 .header a {
@@ -55,6 +55,32 @@
   letter-spacing: -0.01em;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+.navigation a {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+  color: var(--primary-light);
+}
+
+.header a:focus-visible,
+.header button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 @media (max-width: 640px) {
   .header {
     padding: 1rem;
@@ -62,5 +88,9 @@
   
   .headerName {
     font-size: 1.05rem;
+  }
+
+  .navigation {
+    display: none;
   }
 }
