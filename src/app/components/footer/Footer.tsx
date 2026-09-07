@@ -11,18 +11,18 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className={styles.footerContainer}>
+        <footer className={styles.footerContainer} id="contact">
             <div className={styles.footerInner}>
                 <h4>{footerContent.title}</h4>
                 <div className={styles.contactContainer}>
-                    <span className={styles.info}>
+                    <a className={styles.info} href={`mailto:${footerContent.email}`}>
                         <Image src={Email} alt="email" width={20} height={20} />
                         {footerContent.email}
-                    </span>
-                    <span className={styles.info}>
+                    </a>
+                    <a className={styles.info} href={`tel:${footerContent.phone.replaceAll(' ', '')}`}>
                         <Image src={Phone} alt="phone" width={20} height={20} />
                         {footerContent.phone}
-                    </span>
+                    </a>
                     <span className={styles.info}>
                         <Image src={Address} alt="address" width={20} height={20} />
                         {footerContent.address}
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.footerBottom}>
                     <a
-                        href="https://www.linkedin.com/in/jesus-m%C3%BCller-38a9a72a6/"
+                        href="https://www.linkedin.com/in/jesus-humberto-m%C3%BCller-zapata-38a9a72a6/"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="LinkedIn"

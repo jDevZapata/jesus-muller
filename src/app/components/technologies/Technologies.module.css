@@ -1,6 +1,7 @@
 .technologiesSection {
   padding: 5rem 2rem;
-  background: linear-gradient(180deg, var(--background) 0%, var(--background-alt) 100%);
+  background: var(--background);
+  border-top: 1px solid var(--border);
 }
 
 .technologiesInner {
@@ -8,9 +9,19 @@
   margin: 0 auto;
 }
 
+.eyebrow {
+  color: var(--primary-light);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .technologiesSection h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   position: relative;
   display: inline-block;
   left: 50%;
@@ -34,15 +45,15 @@
   text-align: center;
   color: var(--text-muted);
   max-width: 750px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 3rem;
   line-height: 1.9;
   font-size: 1.05rem;
 }
 
 .technologiesContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+  gap: 0.75rem;
   justify-items: center;
 }
 
@@ -50,17 +61,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 1.25rem;
-  background: var(--surface);
-  border-radius: var(--radius);
+  padding: 1.25rem 1rem;
+  background: transparent;
+  border-radius: var(--radius-sm);
   border: 1px solid var(--border);
   transition: var(--transition);
   min-width: 110px;
+  width: 100%;
 }
 
 .technologyItem:hover {
   border-color: var(--primary-light);
-  background: var(--surface-elevated);
+  background: var(--surface);
   box-shadow: var(--shadow-lg), var(--shadow-glow);
   transform: translateY(-6px);
 }
@@ -90,12 +102,12 @@
   }
 
   .technologiesContainer {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
   }
 
   .technologyItem {
-    padding: 1.25rem 1rem;
+    padding: 1rem 0.75rem;
     min-width: 90px;
   }
 

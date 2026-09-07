@@ -37,6 +37,7 @@
   border-radius: var(--radius-sm);
   background: var(--surface);
   border: 1px solid var(--border);
+  text-decoration: none;
 }
 
 .contactContainer .info:hover {
@@ -112,6 +113,7 @@
   .contactContainer .info {
     width: 100%;
     justify-content: center;
+    overflow-wrap: anywhere;
   }
 
   .footerBottom {

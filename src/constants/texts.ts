@@ -1,7 +1,7 @@
 export const presentationContent = {
     title: 'Frontend Developer',
-    intro: 'Hola! mi nombre es Jesús y soy desarrollador Frontend con más de 12 años de experiencia, graduado en la Tecnicatura Universitaria de Analista de Sistemas de la Universidad John F. Kennedy.',
-    description: 'Decicidí crear este sitio web para todas las personas que deseen conocer más detalles sobre mi experiencia profesional ya que soy un apasionado por crear experiencias de usuario excepcionales y resolver problemas complejos a través del código. Siempre en busca de aprender nuevas tecnologías y mejorar mis habilidades.',
+    intro: 'Hola, soy Jesús, Frontend Senior con más de 13 años de experiencia y graduado como Analista de Sistemas en la Universidad Argentina John F. Kennedy.',
+    description: 'Construyo experiencias de usuario claras y soluciones frontend mantenibles para aplicaciones empresariales. Me interesa resolver problemas complejos con criterio técnico, colaborar con equipos de producto y mejorar continuamente la calidad del software.',
     phrase: '"El éxito no es la clave de la felicidad. La felicidad es la clave del éxito. Si amas lo que haces, tendrás éxito." - Albert Schweitzer'
 }
 
@@ -18,8 +18,8 @@ export const experienceContent = {
 export const educationContent = {
     title: 'Estudios Universitarios',
     degree: [
-        'Obtuve mi título universitario en Analista de Sistemas en la Universidad Argentina John F. Kennedy en el año 2017 con un promedio de 7.59',
-        'El título de Analista de Sistemas de la Universidad Argentina John F. Kennedy brinda los conocimientos para comprender el funcionamiento de los grandes sistemas de información actuales y las ditintas tecnologías de desarrollo que los componen, analizar los requerimientos iniciales que los hicieron nacer y el proceso completo para llegar a su implementación.',
+        'Obtuve mi título universitario de Analista de Sistemas en la Universidad Argentina John F. Kennedy en 2017, con un promedio de 7,59.',
+        'La carrera me permitió comprender el funcionamiento de sistemas de información, analizar requerimientos y participar del proceso completo de desarrollo e implementación de soluciones.',
         'La carrera incluye conocimientos sobre la teoría que fundamenta el análisis y desarrollo de los sistemas, diversos lenguajes de desarrollo de software, una visión general sobre sistemas operativos y el hardware donde se gestionan, conocimientos sobre la gestión de los motores gestores de bases de datos y ciertos principios de seguridad informática. Como complemento, sólidos conocimientos de matemática, inglés técnico y probabilidad y estadística.'
     ],
     certificationTitle: 'Certificaciones',
@@ -31,7 +31,7 @@ export const educationContent = {
 
 export const technologiesContent = {
     title: 'Tecnologías',
-    description: 'Durante los últimos 12 años, he adquirido experiencia trabajando con una amplia variedad de bibliotecas, frameworks y metodologías. En esta sección, me gustaría destacar aquellas con las que he dedicado más tiempo y he profundizado mi conocimiento.'
+    description: 'Mi práctica actual está centrada en construir interfaces empresariales mantenibles, con foco en React, Next.js, TypeScript, testing frontend y calidad de entrega.'
 }
 
 export const footerContent = {

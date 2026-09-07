@@ -9,7 +9,12 @@ const Header = () => {
                 <Link href='/'>
                     <span className={styles.logo}>JM</span>
                 </Link>
-                <span className={styles.headerName}>Jesús Müller</span>
+                <Link href='/' className={styles.headerName}>Jesús Müller</Link>
+                <nav className={styles.navigation} aria-label="Navegación principal">
+                    <a href="#experience">Experiencia</a>
+                    <a href="#technology">Tecnologías</a>
+                    <a href="#contact">Contacto</a>
+                </nav>
             </div>
             <ThemeToggle />
         </header>
