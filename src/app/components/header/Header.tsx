@@ -15,9 +15,9 @@ const Header = () => {
                 </Link>
                 <Link href='/' className={styles.headerName}>Jesús Müller</Link>
                 <nav className={styles.navigation} aria-label="Navegación principal">
-                    <a href="#experience">Experiencia</a>
-                    <a href="#technology">Tecnologías</a>
-                    <a href="#contact">Contacto</a>
+                    <a href="/#experience">Experiencia</a>
+                    <a href="/#technology">Tecnologías</a>
+                    <a href="/#contact">Contacto</a>
                 </nav>
             </div>
             <div className={styles.themeControl}>
