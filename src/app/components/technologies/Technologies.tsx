@@ -1,7 +1,13 @@
+'use client';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import styles from './Technologies.module.css';
 import { technologiesContent } from '@/constants/texts';
 import technologies from '@/constants/technologies';
 import Image from 'next/image';
+
+import 'swiper/css';
 
 const Technologies = () => {
     return (
@@ -12,14 +18,32 @@ const Technologies = () => {
                 <div className={styles.description}>
                     {technologiesContent.description}
                 </div>
-                <div className={styles.technologiesContainer}>
+                <Swiper
+modules={[Autoplay]}
+                    loop={true}
+                    slidesPerView="auto"
+                    spaceBetween={32}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    }}
+                    className={styles.swiper}
+                >
                     {technologies.map((tech) => (
-                        <div key={tech.id} className={styles.technologyItem}>
-                            <Image src={tech.icon} alt={tech.name} className={styles.technologyImage} height={48} width={48} />
-                            <span className={styles.technologyName}>{tech.name}</span>
-                        </div>
+                        <SwiperSlide key={tech.id}>
+                            <div className={styles.technologyItem}>
+                                <Image
+                                    src={tech.icon}
+                                    alt={tech.name}
+                                    height={48}
+                                    width={48}
+                                    loading="lazy"
+                                />
+                                <span className={styles.technologyName}>{tech.name}</span>
+                            </div>
+                        </SwiperSlide>
                     ))}
-                </div>
+                </Swiper>
             </div>
         </section>
     );
