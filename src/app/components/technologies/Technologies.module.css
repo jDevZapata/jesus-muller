@@ -50,50 +50,49 @@
   font-size: 1.05rem;
 }
 
-.technologiesContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
-  gap: 0.75rem;
-  justify-items: center;
+.swiper {
+  padding: 1rem 1rem;
+}
+
+.swiper :global(.swiper-button-next),
+.swiper :global(.swiper-button-prev) {
+  color: var(--text);
+}
+
+.swiper :global(.swiper-button-next:hover),
+.swiper :global(.swiper-button-prev:hover) {
+  color: var(--primary-light);
+}
+
+.technologiesInner :global(.swiper-button-next),
+.technologiesInner :global(.swiper-button-prev) {
+  width: 24px;
+  height: 24px;
+}
+
+.technologiesInner :global(.swiper-button-next::after),
+.technologiesInner :global(.swiper-button-prev::after) {
+  font-size: 1rem;
+}
+
+.swiper :global(.swiper-slide) {
+  width: auto;
 }
 
 .technologyItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.25rem 1rem;
-  background: transparent;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
-  transition: var(--transition);
-  min-width: 110px;
-  width: 100%;
-}
-
-.technologyItem:hover {
-  border-color: var(--primary-light);
-  background: var(--surface);
-  box-shadow: var(--shadow-lg), var(--shadow-glow);
-  transform: translateY(-6px);
-}
-
-.technologyImage {
-  margin-bottom: 1rem;
-  transition: var(--transition);
-  filter: grayscale(10%);
-}
-
-.technologyItem:hover .technologyImage {
-  transform: scale(1.15) rotate(5deg);
-  filter: grayscale(0%);
+  padding: 0.5rem 0;
+  min-width: 70px;
 }
 
 .technologyName {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--text);
   text-align: center;
-  letter-spacing: -0.01em;
+  margin-top: 0.75rem;
 }
 
 @media (max-width: 640px) {
@@ -101,17 +100,11 @@
     padding: 4rem 1rem;
   }
 
-  .technologiesContainer {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
-  }
-
-  .technologyItem {
-    padding: 1rem 0.75rem;
-    min-width: 90px;
+  .swiper {
+    padding: 1rem 1.5rem;
   }
 
   .technologyName {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 }
