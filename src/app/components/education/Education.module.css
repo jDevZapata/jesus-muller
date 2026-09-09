@@ -124,14 +124,14 @@
   color: inherit;
 }
 
-.certificationCardLink {
-  cursor: pointer;
-}
-
-.certificationCardLink:hover {
+.certificationCard:hover {
   border-color: var(--primary-light);
   box-shadow: var(--shadow);
   transform: translateY(-2px);
+}
+
+.certificationCardLink {
+  cursor: pointer;
 }
 
 .certIcon {
