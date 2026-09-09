@@ -23,8 +23,8 @@ const Contact = () => {
                         <Image
                             src={Linkedin}
                             alt="linkedin"
-                            width={40}
-                            height={40}
+                            width={35}
+                            height={35}
                         />
                     </a>
                     <a
