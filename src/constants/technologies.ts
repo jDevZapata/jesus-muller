@@ -12,10 +12,15 @@ import unitTesting from '@/assets/icons/techs/unit-testing.png';
 import github from '@/assets/icons/techs/github.png';
 import materialUi from '@/assets/icons/techs/material-ui.png';
 import cloud from '@/assets/icons/techs/cloud.png';
-import jenkins from '@/assets/icons/techs/jenkins.png';
 import scrum from '@/assets/icons/techs/scrum.png';
 import jira from '@/assets/icons/techs/jira.png';
 import vsc from '@/assets/icons/techs/vsc.png';
+import next from '@/assets/icons/techs/next.png';
+import vite from '@/assets/icons/techs/vite.png';
+import jest from '@/assets/icons/techs/jest.png';
+import opencode from '@/assets/icons/techs/opencode.png';
+import copilot from '@/assets/icons/techs/copilot.png';
+import agentic from '@/assets/icons/techs/agentic.png';
 
 export type Technology = {
   id: number;
@@ -24,23 +29,28 @@ export type Technology = {
 };
 
 const technologies: Technology[] = [
-  { id: 101, name: 'HTML5', icon: html5 },
-  { id: 102, name: 'JavaScript', icon: javascript },
-  { id: 103, name: 'CSS3', icon: css },
-  { id: 104, name: 'React', icon: react },
-  { id: 105, name: 'TypeScript', icon: typescript },
-  { id: 106, name: 'Redux', icon: redux },
-  { id: 107, name: 'Git', icon: git },
-  { id: 108, name: 'REST API', icon: api },
-  { id: 109, name: 'JSON', icon: json },
-  { id: 110, name: 'Unit Testing', icon: unitTesting },
-  { id: 111, name: 'GitHub', icon: github },
-  { id: 112, name: 'Material UI', icon: materialUi },
-  { id: 113, name: 'Cloud', icon: cloud },
-  { id: 114, name: 'Jenkins', icon: jenkins },
-  { id: 115, name: 'Scrum', icon: scrum },
-  { id: 116, name: 'Jira', icon: jira },
-  { id: 117, name: 'VS Code', icon: vsc },
+  { id: 1000, name: 'HTML5', icon: html5 },
+  { id: 1001, name: 'CSS3', icon: css },
+  { id: 1002, name: 'JavaScript', icon: javascript },
+  { id: 1003, name: 'TypeScript', icon: typescript },
+  { id: 1004, name: 'React', icon: react },
+  { id: 1005, name: 'Next.js', icon: next },
+  { id: 1006, name: 'Vite', icon: vite },
+  { id: 1007, name: 'Redux', icon: redux },
+  { id: 1008, name: 'Material UI', icon: materialUi },
+  { id: 1009, name: 'REST API', icon: api },
+  { id: 1010, name: 'JSON', icon: json },
+  { id: 1011, name: 'Jest', icon: jest },
+  { id: 1012, name: 'Unit Testing', icon: unitTesting },
+  { id: 1013, name: 'Git', icon: git },
+  { id: 1014, name: 'GitHub', icon: github },
+  { id: 1015, name: 'Cloud', icon: cloud },
+  { id: 1016, name: 'AI Agents', icon: agentic },
+  { id: 1017, name: 'Opencode', icon: opencode },
+  { id: 1018, name: 'GH Copilot', icon: copilot },
+  { id: 1019, name: 'VS Code', icon: vsc },
+  { id: 1020, name: 'Scrum', icon: scrum },
+  { id: 1021, name: 'Jira', icon: jira },
 ];
 
 export default technologies;
