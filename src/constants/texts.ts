@@ -16,16 +16,17 @@ export const experienceContent = {
 }
 
 export const educationContent = {
-    title: 'Estudios Universitarios',
-    degree: [
-        'Obtuve mi título universitario de Analista de Sistemas en la Universidad Argentina John F. Kennedy en 2017, con un promedio de 7,59.',
-        'La carrera me permitió comprender el funcionamiento de sistemas de información, analizar requerimientos y participar del proceso completo de desarrollo e implementación de soluciones.',
-        'La carrera incluye conocimientos sobre la teoría que fundamenta el análisis y desarrollo de los sistemas, diversos lenguajes de desarrollo de software, una visión general sobre sistemas operativos y el hardware donde se gestionan, conocimientos sobre la gestión de los motores gestores de bases de datos y ciertos principios de seguridad informática. Como complemento, sólidos conocimientos de matemática, inglés técnico y probabilidad y estadística.'
-    ],
+    title: 'Formación',
+    university: {
+        degree: 'Analista de Sistemas',
+        name: 'Universidad Argentina John F. Kennedy',
+        year: 2017,
+    },
     certificationTitle: 'Certificaciones',
     certifications: [
-        { id: '8277632', name: 'React - Guía definitiva', url: 'https://www.udemy.com/certificate/UC-78708101-b8dd-4068-9296-2c30c6cc7ba1/' },
-        { id: '9536122', name: 'Git - Integración continua', url: 'https://www.udemy.com/certificate/UC-104025bc-a6f0-4106-b041-d71dad522fe6/' }
+        { id: '8277632', name: 'React - Guía definitiva', platform: 'Udemy', url: 'https://www.udemy.com/certificate/UC-78708101-b8dd-4068-9296-2c30c6cc7ba1/' },
+        { id: '9536122', name: 'Git - Integración continua', platform: 'Udemy', url: 'https://www.udemy.com/certificate/UC-104025bc-a6f0-4106-b041-d71dad522fe6/' },
+        { id: 'english', name: 'Inglés técnico', platform: 'English Services', url: '' },
     ]
 }
 
