@@ -35,8 +35,11 @@ export const technologiesContent = {
 }
 
 export const footerContent = {
-    title: 'Información de contacto',
-    email: 'jhzapata.dev@gmail.com',
-    address: 'Villa Santa Rita, CABA, Argentina',
+    address: 'Buenos Aires, Argentina',
     mark: 'Jesús Müller - Frontend Developer',
+}
+
+export const contactContent = {
+    title: 'Contacto',
+    description: '¿Tenes un proyecto en mente o te gustaría que trabajemos juntos? Escríbime y me pondré en contacto lo antes posible.',
 }
