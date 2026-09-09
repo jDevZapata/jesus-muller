@@ -6,6 +6,17 @@
   border-bottom: 1px solid var(--border);
 }
 
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .educationInner {
   max-width: 950px;
   margin: 0 auto;
@@ -35,28 +46,52 @@
   border-radius: 2px;
 }
 
-.educationDescription {
+.universityCard {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
   background: var(--background);
-  padding: 2.5rem;
+  padding: 2rem 2.5rem;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   margin-bottom: 3rem;
+  transition: var(--transition);
 }
 
-.educationDescription p {
-  margin-bottom: 1.25rem;
-  color: var(--text-muted);
-  line-height: 1.9;
-  font-size: 1.05rem;
+.universityCard:hover {
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-lg);
 }
 
-.educationDescription p:last-child {
-  margin-bottom: 0;
+.universityIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--primary-light), var(--accent));
+  color: var(--background);
+  flex-shrink: 0;
 }
 
-.educationDescription p:first-child {
-  font-weight: 500;
+.universityInfo h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
   color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.universityInfo p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.universityInfo span {
+  color: var(--primary-light);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .certifications {
@@ -72,63 +107,82 @@
 
 .certificationsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
 }
 
 .certificationCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   background: var(--background);
-  padding: 2rem;
+  padding: 1.25rem 1.5rem;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
 }
 
-.certificationCard:hover {
+.certificationCardLink {
+  cursor: pointer;
+}
+
+.certificationCardLink:hover {
   border-color: var(--primary-light);
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
 }
 
-.certificationCard strong {
-  display: block;
-  margin-bottom: 1rem;
-  color: var(--text);
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.certificationCard span {
-  color: var(--text-muted);
-  font-size: 1rem;
-}
-
-.certificationCard a {
+.certIcon {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--border-light);
-  color: var(--primary-light);
-  border-radius: 999px;
+  justify-content: center;
+  width: 44px;
+  height: 40px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+}
+
+.udemyLogo {
+  width: 28px;
+  height: 28px;
+}
+
+
+
+.certInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.certPlatform {
+  font-size: 0.75rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.certName {
   font-size: 0.95rem;
-  transition: var(--transition);
-  margin-bottom: 0.75rem;
+  font-weight: 500;
+  color: var(--text);
 }
 
-.certificationCard a:hover {
-  background: var(--surface-elevated);
-  border-color: var(--primary-light);
-}
-
-.certificationCard a span {
+.certLinkIcon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  margin-left: auto;
   transition: var(--transition);
 }
 
-.certificationCard a:hover span {
-  transform: translate(2px, -2px);
+.certificationCard:hover .certLinkIcon {
+  color: var(--primary-light);
 }
 
 @media (max-width: 640px) {
@@ -136,8 +190,10 @@
     padding: 4rem 1rem;
   }
 
-  .educationDescription {
-    padding: 1.75rem;
+  .universityCard {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
   }
 
   .certificationsGrid {
