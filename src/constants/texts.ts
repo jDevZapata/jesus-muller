@@ -8,7 +8,7 @@ export const presentationContent = {
 export const experienceContent = {
     title: 'Experiencia Laboral',
     company: {
-        seeMoore: 'Ver más',
+        seeMoore: 'Detalle',
         links: 'Enlaces útiles',
         technologies: 'Tecnologías',
         projects: 'Proyectos'
