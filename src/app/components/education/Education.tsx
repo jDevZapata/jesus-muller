@@ -1,38 +1,12 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
 import { GraduationCap, ExternalLink, Globe } from 'lucide-react';
 import { educationContent } from '@/constants/texts';
 import styles from './Education.module.css';
 
 const Education = () => {
-    const sectionRef = useRef<HTMLElement>(null);
-
-    useEffect(() => {
-        const node = sectionRef.current;
-        if (!node) return;
-
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add(styles.visible);
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            { threshold: 0.15 }
-        );
-
-        observer.observe(node);
-
-        return () => {
-            observer.unobserve(node);
-        };
-    }, []);
-
     return (
-        <section ref={sectionRef} className={`${styles.education} ${styles.animate}`}>
+        <section className={styles.education}>
             <div className={styles.educationInner}>
                 <div className={styles.title}>
                     <h2>{educationContent.title}</h2>

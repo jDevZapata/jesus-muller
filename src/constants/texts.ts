@@ -24,9 +24,9 @@ export const educationContent = {
     },
     certificationTitle: 'Certificaciones',
     certifications: [
-        { id: '8277632', name: 'React - Guía definitiva', platform: 'Udemy', url: 'https://www.udemy.com/certificate/UC-78708101-b8dd-4068-9296-2c30c6cc7ba1/' },
+        { id: '8277632', name: 'Next.js - Framework React', platform: 'Udemy', url: 'https://www.udemy.com/certificate/UC-35e2398e-87cd-4861-9bd9-3e534fa89820/' },
         { id: '9536122', name: 'Git - Integración continua', platform: 'Udemy', url: 'https://www.udemy.com/certificate/UC-104025bc-a6f0-4106-b041-d71dad522fe6/' },
-        { id: 'english', name: 'Inglés técnico', platform: 'English Services', url: '' },
+        { id: 'english', name: 'Inglés técnico (B1)', platform: 'English Services', url: '' },
     ]
 }
 
