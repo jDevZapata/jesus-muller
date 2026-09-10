@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Profile from '@/assets/profile.png'
 import styles from './Presentation.module.css';
 import { presentationContent } from '@/constants/texts';
+import { ExternalLink } from 'lucide-react';
 
 const Presentation = () => {
     return (
@@ -14,7 +15,7 @@ const Presentation = () => {
                     <p>{presentationContent.description}</p>
                     <div className={styles.actions}>
                         <a href="#experience" className={styles.primaryAction}>Ver experiencia</a>
-                        <a href="https://www.linkedin.com/in/jesus-humberto-m%C3%BCller-zapata-38a9a72a6/" target="_blank" rel="noopener noreferrer" className={styles.secondaryAction}>LinkedIn ↗</a>
+                        <a href="https://www.linkedin.com/in/jesus-humberto-m%C3%BCller-zapata-38a9a72a6/" target="_blank" rel="noopener noreferrer" className={styles.secondaryAction}>LinkedIn <ExternalLink size={14} /></a>
                     </div>
                 </div>
                 <div className={styles.img}>
