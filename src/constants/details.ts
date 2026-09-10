@@ -16,14 +16,13 @@ const details: CompanyExperience[] = [
         description: 'Consultor para Techint, una empresa de importación de materiales industriales, donde formé parte del equipo de PREMO para mejorar la experiencia de usuario del sitio web, optimizar su rendimiento e implementar nuevas funcionalidades y requerimientos solicitados por el cliente.',
       },
       {
-        subtitle: 'Plugin de Outlook para proveedores',
+        subtitle: 'Plugin de Outlook para Techint',
         description: 'Desarrollo de un plugin integrado con el ecosistema de la aplicación web para agilizar la generación de invitaciones a cotizar para los proveedores y actualizar su estado sin necesidad de salir de Outlook.',
         highlights: ['Integración en tiempo real con la web app', 'Reducción de pasos manuales para proveedores'],
       },
     ],
-    experienceLinks: [{ id: 1005, label: 'Techint', link: 'https://www.techint.com/es' }],
     technologies: [
-      'HTML5', 'CSS3', 'React', 'JavaScript', 'TypeScript', 'Axios', 'MUI', 'Azure', 'yo-office', 'Recoil', 'ES5', 'JSON', 'Git', 'Postman', 'Scrum', 'Kanban', 'Jira',
+      'HTML5', 'CSS3', 'React', 'JavaScript', 'TypeScript', 'Vite', 'Axios', 'MUI', 'Azure', 'yo-office', 'Recoil', 'Git', 'Github', 'Github Copilot', 'Frida', 'Scrum', 'Kanban', 'Jira',
     ],
     projects: ['Premo V2'],
     workedTime: { from: '2024', to: '2026' },
@@ -36,8 +35,8 @@ const details: CompanyExperience[] = [
     myExperience: [
       {
         subtitle: 'Warner — Apps de gestión publicitaria',
-        description: 'Desarrollo de aplicaciones web internas para la gestión de contratos publicitarios dentro de programas de la cadena, como ESPN, Cartoon Network, Nickelodeon, entre otros.',
-        highlights: ['Angular', 'Gestión de contratos multi-programa'],
+        description: 'Desarrollo de aplicaciones web internas para la gestión de contratos publicitarios dentro de programas de televisión pertenecientes a la cadena, como ESPN, Cartoon Network, Nickelodeon, entre otros.',
+        highlights: ['Gestión de contratos de publicidad', 'Especificaciones de visualización publicitaria'],
       },
       {
         subtitle: 'ICBC — Banca digital',
@@ -50,15 +49,10 @@ const details: CompanyExperience[] = [
         highlights: ['Blockchain Ethereum', 'Verificación de certificados'],
       },
     ],
-    experienceLinks: [
-      { id: 1006, label: 'ICBC', link: 'https://www.icbc.com.ar/personas' },
-      { id: 1007, label: 'Warner', link: 'https://www.international.tbs.com/' },
-      { id: 1008, label: 'BIT Certs', link: 'https://www.linkedin.com/posts/baufest_qu%C3%A9-es-el-bit-y-las-bitcerts-activity-7133841925576568832-rlq3/?trk=public_profile_like_view&originalSubdomain=es' },
-    ],
     technologies: [
-      'HTML5', 'CSS3', 'Angular', 'React', 'JavaScript', 'TypeScript', 'ES6', 'MUI', 'Bootstrap', 'Material Design', 'ICBC CL', 'Redux', 'Formik', 'Jest', 'React Testing Library', 'Karma', 'Jasmine', 'CRA', 'RxJS', 'i18n', 'Axios', 'Git', 'Postman', 'Scrum', 'Kanban', 'Jira', 'Miro',
+      'HTML5', 'CSS3', 'Angular', 'React', 'JavaScript', 'TypeScript', 'MUI', 'Material Design', 'ICBC CL', 'Redux', 'Formik', 'Jest', 'React Testing Library', 'Karma', 'Jasmine', 'CRA', 'RxJS', 'i18n', 'Axios', 'Git', 'Github', 'Azure', 'Scrum', 'Jira', 'Miro'
     ],
-    projects: ['Warner', 'ICBC Legajo Digital', 'ICBC Prendarios', 'Nera', 'Pont', 'Bit certs'],
+    projects: ['Warner', 'ICBC Legajo Digital', 'ICBC Prendarios', 'Nera', 'Bit certs'],
     workedTime: { from: '2019', to: '2024' },
   },
   {
@@ -69,13 +63,12 @@ const details: CompanyExperience[] = [
     myExperience: [
       {
         subtitle: 'JP Morgan — Proyectos internos',
-        description: 'Implementación de las mejores prácticas en desarrollo, como TDD, Redux, Pair programming, Peer review, CI/CD y despliegues automáticos en la nube.',
+        description: 'Construcción de web app interna de tracking de relacionamiento de bancos asociados asociados a la firma. Implementación de las mejores prácticas en desarrollo, como TDD, Coverage mayor al 80%, Redux, Pair programming, Peer review, CI/CD y despliegues automáticos en la nube.',
         highlights: ['TDD y testing coverage', 'CI/CD automatizado', 'Trabajo en equipos multiculturales (India, Francia, Suiza)'],
       },
     ],
-    experienceLinks: [{ id: 1005, label: 'JP Morgan', link: 'https://www.jpmorgan.com/AR/en/about-us' }],
     technologies: [
-      'HTML5', 'CSS3', 'Styled Components', 'React', 'JavaScript', 'ES6', 'TypeScript', 'JP Morgan CL', 'Redux', 'Jest', 'Enzyme', 'Webpack', 'TDD', 'Testing coverage', 'Babel', 'Fetch', 'JSON', 'Git', 'Bitbucket', 'Postman', 'WinSCP', 'Scrum', 'Kanban', 'Jira', 'Jenkins',
+      'HTML5', 'CSS3', 'Styled Components', 'React', 'JavaScript', 'TypeScript', 'JP Morgan CL', 'Redux', 'Jest', 'Enzyme', 'Webpack', 'TDD', 'Testing coverage', 'Git', 'Bitbucket', 'Scrum', 'Jira'
     ],
     workedTime: { from: '2018', to: '2019' },
   },
@@ -95,9 +88,8 @@ const details: CompanyExperience[] = [
         highlights: ['Diseño de servicios web SOAP', 'Visualización de datos con gráficos interactivos'],
       },
     ],
-    experienceLinks: [{ id: 1004, label: 'OSDE', link: 'https://www.osde.com.ar/index.html' }],
     technologies: [
-      'HTML5', 'CSS3', 'Angular', 'JavaScript', 'TypeScript', 'ES5', 'jQuery', 'XML', 'JSON', 'Java', 'Hibernate', 'SQL', 'Tortoise SVN', 'Git', 'Postman', 'WinSCP', 'Scrum', 'Kanban', 'Jira', 'Trello',
+      'HTML5', 'CSS3', 'Angular', 'JavaScript', 'TypeScript', 'jQuery', 'Java', 'Hibernate', 'SQL', 'Tortoise SVN', 'Git', 'Postman', 'WinSCP', 'Scrum', 'Trello',
     ],
     projects: ['OSDE'],
     workedTime: { from: '2016', to: '2018' },
@@ -119,13 +111,8 @@ const details: CompanyExperience[] = [
         highlights: ['Interacción directa con cliente internacional', 'Elaboración de requisitos'],
       },
     ],
-    experienceLinks: [
-      { id: 1001, label: 'La Ley Online', link: 'https://support.rg.thomsonreuters.com/laley/Gu%C3%ADadeuso.pdf' },
-      { id: 1002, label: 'Westlaw Uk', link: 'https://www.nup.ac.cy/wp-content/uploads/2020/09/Westlaw-UK-Student-User-Guide.pdf' },
-      { id: 1003, label: 'Westlaw India', link: 'https://main.sci.gov.in/pdf/Library/Westlaw%20India%20Manual.pdf' },
-    ],
     technologies: [
-      'HTML4', 'XHTML', 'CSS', 'JavaScript', 'jQuery', 'Apache Velocity', 'XML', 'XSLT', 'Novus', 'Ajax', 'TFS', 'Scrum', 'Kanban', 'Jira', 'Jenkins',
+      'HTML4', 'XHTML', 'CSS', 'JavaScript', 'jQuery', 'Apache Velocity', 'XML', 'XSLT', 'Novus', 'Ajax', 'TFS', 'Scrum', 'Jira', 'Jenkins',
     ],
     projects: ['La Ley (Argentina, Brasil, Uruguay, Chile, Perú)', 'Westlaw UK', 'Westlaw India'],
     workedTime: { from: '2013', to: '2016' },

@@ -32,14 +32,12 @@
 
 .myExperience,
 .projectsSection,
-.technologiesSection,
-.linksSection {
+.technologiesSection {
   margin: 3rem 0;
 }
 
 .projectsSection h2,
-.technologiesSection h2,
-.linksSection h2 {
+.technologiesSection h2 {
   color: var(--text);
   font-size: 1.25rem;
   margin-bottom: 1.25rem;
@@ -120,32 +118,6 @@
   height: 4px;
   background: var(--primary-light);
   border-radius: 50%;
-}
-
-.linksSection {
-  border-top: 1px solid var(--border);
-  padding-top: 2rem;
-}
-
-.linkList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.linksSection a {
-  border: 1px solid var(--primary-light);
-  border-radius: 999px;
-  color: var(--primary-light);
-  font-weight: 600;
-  font-size: 0.95rem;
-  padding: 0.7rem 1rem;
-  transition: var(--transition);
-}
-
-.linksSection a:hover {
-  background: var(--primary-light);
-  color: #052e2b;
 }
 
 .backLink {

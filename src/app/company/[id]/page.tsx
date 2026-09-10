@@ -88,16 +88,6 @@ const CompanyDetail = async ({ params }: { params: Promise<{ id: string }> }) =>
                     </ul>
                 </section>
             )}
-            <section className={`${styles.linksSection} ${styles.fadeIn}`}>
-                <h2>{experienceContent.company.clients}</h2>
-                <div className={styles.linkList}>
-                    {company.experienceLinks.map((link) => (
-                        <a key={link.id} href={link.link} target="_blank" rel="noopener noreferrer">
-                            {link.label} <span aria-hidden="true">↗</span>
-                        </a>
-                    ))}
-                </div>
-            </section>
         </div>
     );
 }
