@@ -15,7 +15,7 @@ const Presentation = () => {
                     <p>{presentationContent.description}</p>
                     <div className={styles.actions}>
                         <a href="#experience" className={styles.primaryAction}>Ver experiencia</a>
-                        <a href="https://www.linkedin.com/in/jesus-humberto-m%C3%BCller-zapata-38a9a72a6/" target="_blank" rel="noopener noreferrer" className={styles.secondaryAction}>LinkedIn <ExternalLink size={14} /></a>
+                        <a href="https://www.linkedin.com/in/jesusmuller/" target="_blank" rel="noopener noreferrer" className={styles.secondaryAction}>LinkedIn <ExternalLink size={14} /></a>
                     </div>
                 </div>
                 <div className={styles.img}>

@@ -34,9 +34,9 @@ export default function RootLayout({
     "@type": "Person",
     name: "Jesús Müller",
     jobTitle: "Frontend Senior",
-    url: "https://www.linkedin.com/in/jesus-humberto-m%C3%BCller-zapata-38a9a72a6/",
+    url: "https://www.linkedin.com/in/jesusmuller/",
     sameAs: [
-      "https://www.linkedin.com/in/jesus-humberto-m%C3%BCller-zapata-38a9a72a6/",
+      "https://www.linkedin.com/in/jesusmuller/",
       "https://github.com/jDevZapata/",
     ],
     alumniOf: {

@@ -15,7 +15,7 @@ const Contact = () => {
                 <ContactForm />
                 <div className={styles.socialLinks}>
                     <a
-                        href="https://www.linkedin.com/in/jesus-humberto-m%C3%BCller-zapata-38a9a72a6/"
+                        href="https://www.linkedin.com/in/jesusmuller/"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="LinkedIn"
