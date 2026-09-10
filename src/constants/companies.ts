@@ -22,7 +22,7 @@ const companies: CompanySummary[] = [
     alt: 'Softtek',
     role: 'Frontend Senior',
     period: '2024 - 2026',
-    summary: 'Desarrollo de PREMO V2 para Techint con React y Azure, optimización de rendimiento y creación de plugin premo para Outlook.',
+    summary: 'Desarrollo de PREMO V2 para Techint con Next.js, React y Azure, optimización de rendimiento y creación de plugin premo para Outlook.',
   },
   {
     id: 2019,

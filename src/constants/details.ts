@@ -22,7 +22,7 @@ const details: CompanyExperience[] = [
       },
     ],
     technologies: [
-      'HTML5', 'CSS3', 'React', 'JavaScript', 'TypeScript', 'Vite', 'Axios', 'MUI', 'Azure', 'yo-office', 'Recoil', 'Git', 'Github', 'Github Copilot', 'Frida', 'Scrum', 'Kanban', 'Jira',
+      'HTML5', 'CSS3', 'Next.js', 'React', 'JavaScript', 'TypeScript', 'Vite', 'Axios', 'MUI', 'Jest', 'React Testing Library', 'Azure', 'yo-office', 'Recoil', 'Git', 'Github', 'Github Copilot', 'Frida', 'Scrum', 'Kanban', 'Jira',
     ],
     projects: ['Premo V2'],
     workedTime: { from: '2024', to: '2026' },
