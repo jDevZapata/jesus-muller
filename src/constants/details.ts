@@ -9,12 +9,17 @@ const details: CompanyExperience[] = [
     id: 2024,
     name: 'Softtek',
     img: Softtek,
-    description:
-      'Softtek es una empresa líder en servicios de tecnología y soluciones de negocio, comprometida con la transformación digital de las organizaciones. Desde su fundación en 1982 en México, ha sido pionera en ofrecer servicios de vanguardia que impulsan la eficiencia operativa y la innovación en diversas industrias.',
+    summary: 'Desarrollo de aplicaciones empresariales con React y servicios cloud en Azure para el sector industrial.',
     myExperience: [
-      'En esta nueva etapa en Softtek, tuve la oportunidad de trabajar con tecnologías modernas y en la nube de Azure para Techint y uno de sus productos estrella, PREMO V2.',
-      'Durante casi dos años, fui consultor para Techint, una empresa de importación de materiales industriales, donde formé parte del equipo de PREMO para mejorar la experiencia de usuario del sitio web, optimizar su rendimiento e implementar nuevas funcionalidades y requerimientos solicitados por el cliente.',
-      'También participé en el desarrollo de un plugin integrado con el ecosistema de la aplicación web para agilizar la generación de invitaciones a cotizar para los proveedores y actualizar su estado sin necesidad de salir de Outlook, reflejando los cambios en tiempo real.',
+      {
+        subtitle: 'PREMO V2 — Plataforma de Techint',
+        description: 'Consultor para Techint, una empresa de importación de materiales industriales, donde formé parte del equipo de PREMO para mejorar la experiencia de usuario del sitio web, optimizar su rendimiento e implementar nuevas funcionalidades y requerimientos solicitados por el cliente.',
+      },
+      {
+        subtitle: 'Plugin de Outlook para proveedores',
+        description: 'Desarrollo de un plugin integrado con el ecosistema de la aplicación web para agilizar la generación de invitaciones a cotizar para los proveedores y actualizar su estado sin necesidad de salir de Outlook.',
+        highlights: ['Integración en tiempo real con la web app', 'Reducción de pasos manuales para proveedores'],
+      },
     ],
     experienceLinks: [{ id: 1005, label: 'Techint', link: 'https://www.techint.com/es' }],
     technologies: [
@@ -27,14 +32,23 @@ const details: CompanyExperience[] = [
     id: 2019,
     name: 'Baufest',
     img: Baufest,
-    description:
-      'Baufest es una empresa de servicios de tecnología con una amplia trayectoria en el mercado. Fundada en Argentina en 1991, Baufest se ha expandido a nivel global, estableciendo operaciones en varios países de América Latina, Estados Unidos y Europa. La empresa se especializa en ofrecer soluciones tecnológicas innovadoras y personalizadas para satisfacer las necesidades de sus clientes en áreas como desarrollo de software, consultoría tecnológica, inteligencia artificial, transformación digital y más.',
+    summary: 'Desarrollo de aplicaciones bancarias y certificados digitales con Angular y React en equipos multiculturales.',
     myExperience: [
-      'En Baufest, tuve el privilegio de colaborar con diversos clientes, incluyendo a Warner, ICBC, Pont y en una aplicación interna llamada Bit Certs.',
-      'Durante mi primer año, trabajé en proyectos para Warner. desarrollando aplicaciones web internas para la gestión de contratos publicitarios dentro de programas de la cadena, como ESPN, Cartoon Network, Nickelodeon, entre otros (utilizando Angular).',
-      'En los dos años siguientes, formé parte del equipo que trabajó para ICBC (Banco Industrial y Comercial de China), donde contribuimos al desarrollo de varias aplicaciones, incluyendo el Legajo Digital para los socios del banco y una aplicación móvil híbrida llamada Préstamos Prendarios para concesionarios asociados al banco (utilizando Angular).',
-      'Desde el año 2022, participé brevemente en el proyecto Nera (Préstamos Agro) del Banco Galicia, para luego unirme al proyecto PONT (Préstamos Agro de un grupo privado) y, en los últimos meses, trabajar en Bit Certs (certificados digitales verificables en la blockchain de Ethereum) (utilizando React).',
-      'En todos estos proyectos, nos dedicamos a mantener rigurosamente las mejores prácticas de desarrollo. Además, tuve el honor de desempeñar roles de tutor y profesor en programas de entrenamiento intensivo, realizar presentaciones de demostración a clientes, brindar apoyo técnico a mis compañeros a través de clases grupales, y también liderar y ser referente técnico frontend en los equipos en los que trabajé y también de la empresa.',
+      {
+        subtitle: 'Warner — Apps de gestión publicitaria',
+        description: 'Desarrollo de aplicaciones web internas para la gestión de contratos publicitarios dentro de programas de la cadena, como ESPN, Cartoon Network, Nickelodeon, entre otros.',
+        highlights: ['Angular', 'Gestión de contratos multi-programa'],
+      },
+      {
+        subtitle: 'ICBC — Banca digital',
+        description: 'Contribución al desarrollo de varias aplicaciones, incluyendo el Legajo Digital para los socios del banco y una aplicación móvil híbrida llamada Préstamos Prendarios para concesionarios asociados al banco.',
+        highlights: ['Legajo Digital para socios', 'App móvil híbrida para concesionarios'],
+      },
+      {
+        subtitle: 'Bit Certs — Certificados blockchain',
+        description: 'Certificados digitales verificables en la blockchain de Ethereum, desarrollados con React siguiendo las mejores prácticas de desarrollo.',
+        highlights: ['Blockchain Ethereum', 'Verificación de certificados'],
+      },
     ],
     experienceLinks: [
       { id: 1006, label: 'ICBC', link: 'https://www.icbc.com.ar/personas' },
@@ -51,12 +65,13 @@ const details: CompanyExperience[] = [
     id: 2018,
     name: 'Globant',
     img: Globant,
-    description:
-      'Globant es una empresa multinacional de tecnología y servicios de consultoría con sede en Argentina. Fundada en 2003, Globant se ha destacado como líder en la industria de la transformación digital, ofreciendo servicios de vanguardia en áreas como desarrollo de software, experiencia del usuario, inteligencia artificial, realidad aumentada y más.',
+    summary: 'Desarrollo de aplicaciones bancarias internas con React, Redux y TDD para JP Morgan.',
     myExperience: [
-      'En Globant, tuve la oportunidad de colaborar con equipos multiculturales y trabajar completamente en inglés. Además, adquirí conocimientos sobre las mejores prácticas en desarrollo.',
-      'Durante mi tiempo en Globant, trabajé como consultor para JP Morgan, uno de los bancos más grandes del mundo, en proyectos internos sujetos a confidencialidad. Aunque no puedo compartir detalles específicos debido a acuerdos de confidencialidad, puedo mencionar que implementamos las mejores prácticas en desarrollo, como TDD, Redux, Pair programming, Peer review, CI/CD y despliegues automáticos en la nube.',
-      'Mi experiencia en Globant también me permitió conocer personas maravillosas y sumergirme en culturas enriquecedoras, trabajando codo a codo con personas de la India, Francia y Suiza.',
+      {
+        subtitle: 'JP Morgan — Proyectos internos',
+        description: 'Implementación de las mejores prácticas en desarrollo, como TDD, Redux, Pair programming, Peer review, CI/CD y despliegues automáticos en la nube.',
+        highlights: ['TDD y testing coverage', 'CI/CD automatizado', 'Trabajo en equipos multiculturales (India, Francia, Suiza)'],
+      },
     ],
     experienceLinks: [{ id: 1005, label: 'JP Morgan', link: 'https://www.jpmorgan.com/AR/en/about-us' }],
     technologies: [
@@ -68,12 +83,17 @@ const details: CompanyExperience[] = [
     id: 2016,
     name: 'Softtek',
     img: Softtek,
-    description:
-      'Softtek es una empresa líder en servicios de tecnología y soluciones de negocio, comprometida con la transformación digital de las organizaciones. Desde su fundación en 1982 en México, ha sido pionera en ofrecer servicios de vanguardia que impulsan la eficiencia operativa y la innovación en diversas industrias.',
+    summary: 'Modernización de plataforma web y desarrollo de dashboards analíticos para el sector salud.',
     myExperience: [
-      'En Softtek, tuve la oportunidad de trabajar con tecnologías de vanguardia y colaborar con clientes de diversos sectores gracias a la amplia cartera de servicios de la empresa en el área de tecnología de la información.',
-      'Durante casi dos años, fui consultor para OSDE, una empresa de servicios de salud, donde formé parte de equipos para proyectos de modernización del sitio web y la implementación de Google Analytics en toda la plataforma.',
-      'También participé en el desarrollo de una aplicación web interna para visualizar estadísticas de las interacciones de los usuarios con las secciones de la web, proporcionando análisis en forma de gráficos que facilitaron la toma de decisiones por parte del equipo directivo. En este proyecto, contribuí al diseño de servicios web SOAP consumidos por la interfaz de usuario que estábamos construyendo simultáneamente.',
+      {
+        subtitle: 'OSDE — Modernización web',
+        description: 'Consultor para OSDE, una empresa de servicios de salud, donde formé parte de equipos para proyectos de modernización del sitio web y la implementación de Google Analytics en toda la plataforma.',
+      },
+      {
+        subtitle: 'Dashboard de analíticas',
+        description: 'Desarrollo de una aplicación web interna para visualizar estadísticas de las interacciones de los usuarios con las secciones de la web, proporcionando análisis en forma de gráficos que facilitaron la toma de decisiones por parte del equipo directivo.',
+        highlights: ['Diseño de servicios web SOAP', 'Visualización de datos con gráficos interactivos'],
+      },
     ],
     experienceLinks: [{ id: 1004, label: 'OSDE', link: 'https://www.osde.com.ar/index.html' }],
     technologies: [
@@ -86,14 +106,18 @@ const details: CompanyExperience[] = [
     id: 2013,
     name: 'Thomson Reuters',
     img: Thomson,
-    description:
-      'Thomson Reuters / La Ley Argentina es una empresa dedicada principalmente a la venta de libros para abogados y productos digitales que facilitan la búsqueda dentro de una extensa base de datos de jurisprudencia, así como el enriquecimiento de los textos encontrados.',
+    summary: 'Desarrollo de aplicaciones legales digitales y primer rol profesional en el mundo del desarrollo.',
     myExperience: [
-      'Thomson fue la primera empresa que me brindó la oportunidad de adentrarme en el mundo del desarrollo y donde tuve el placer de conocer a grandes personas. Aquí, aprendí rápidamente la importancia del trabajo en equipo y cómo adaptarse a las presiones diarias de la industria del desarrollo.',
-      'En Thomson, gracias a mi buen desempeño fui ascendido a desarrollador Semi Senior en mis primeros 6 meses de trabajo. Siempre me consideraron para enfrentar los desafíos más grandes dentro de la empresa.',
-      'Tuve mi primera experiencia liderando un proyecto pequeño, Westlaw India, donde adquirí una valiosa experiencia al interactuar directamente con el cliente y al contribuir en la elaboración y refinamiento de los requisitos.',
-      'Aprendí mucho sobre habilidades blandas, metodologías ágiles de trabajo como Scrum o Kanban, el manejo de Jira y la estimación en story points, entre otros aspectos.',
-      'Debido a que las aplicaciones web que desarrollé requieren de accesos, lo que puedo hacer es linkear guías donde se puede tener una visual de las apps desarrolladas.',
+      {
+        subtitle: 'La Ley — Plataforma legal',
+        description: 'Desarrollo de aplicaciones web para búsqueda rápida de jurisprudencia; esta fue una aplicación específicamente dirigida a abogados. Aquí, aprendí rápidamente la importancia del trabajo en equipo en la industria del desarrollo.',
+        highlights: ['Ascenso a Semi Senior en 6 meses'],
+      },
+      {
+        subtitle: 'Westlaw India — Liderazgo de proyecto',
+        description: 'Primera experiencia liderando un proyecto pequeño, donde adquirí una valiosa experiencia al interactuar directamente con el cliente y contribuir en la elaboración y refinamiento de los requisitos.',
+        highlights: ['Interacción directa con cliente internacional', 'Elaboración de requisitos'],
+      },
     ],
     experienceLinks: [
       { id: 1001, label: 'La Ley Online', link: 'https://support.rg.thomsonreuters.com/laley/Gu%C3%ADadeuso.pdf' },
