@@ -6,12 +6,18 @@ export type ExperienceLink = {
   link: string;
 };
 
+export type ExperienceEntry = {
+  subtitle: string;
+  description: string;
+  highlights?: string[];
+};
+
 export type CompanyExperience = {
   id: number;
   name: string;
   img: StaticImageData;
-  description: string;
-  myExperience: string[];
+  summary: string;
+  myExperience: ExperienceEntry[];
   experienceLinks: ExperienceLink[];
   technologies: string[];
   projects?: string[];
